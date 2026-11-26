@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 5 - Mi coche</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+function setup() {
+  createCanvas(800, 600);
+
+  // FONDO: cielo azul clarito.
+  background(180, 220, 245);
+
+  // SOL.
+  noStroke();
+  fill(255, 220, 70);
+  circle(110, 100, 85);
+
+  // NUBES.
+  noStroke();
+  fill(255);
+
+  ellipse(200, 130, 90, 35);
+  ellipse(500, 110, 90, 35);
+  ellipse(350, 70, 90, 35);
+  ellipse(670, 90, 90, 35);
+
+  // ARCOÍRIS.
+  noFill();
+  strokeWeight(10);
+
+  stroke(255, 100, 100);
+  arc(650, 280, 260, 200, PI, TWO_PI);
+
+  stroke(255, 170, 60);
+  arc(650, 280, 240, 180, PI, TWO_PI);
+
+  stroke(255, 230, 70);
+  arc(650, 280, 220, 160, PI, TWO_PI);
+
+  stroke(100, 190, 120);
+  arc(650, 280, 200, 140, PI, TWO_PI);
+
+  stroke(90, 150, 230);
+  arc(650, 280, 180, 120, PI, TWO_PI);
+
+  // MONTAÑAS DEL FONDO.
+  noStroke();
+  fill(125, 175, 145);
+  triangle(0, 390, 170, 190, 340, 390);
+  triangle(530, 390, 700, 220, 800, 390);
+
+  // CARRETERA.
+  fill(75, 75, 80);
+  rect(0, 440, 800, 160);
+
+  // Líneas de la carretera.
+  stroke(255);
+  strokeWeight(5);
+  line(30, 520, 130, 520);
+  line(210, 520, 310, 520);
+  line(390, 520, 490, 520);
+  line(570, 520, 670, 520);
+  line(750, 520, 800, 520);
+
+  // CARROCERÍA AZUL MARINO.
+  fill(15, 35, 75);
+  stroke(5, 15, 35);
+  strokeWeight(4);
+  rect(170, 330, 460, 100);
+
+  // PARTE SUPERIOR DEL COCHE.
+  fill(15, 35, 75);
+  triangle(265, 335, 350, 245, 490, 335);
+
+  // VENTANAS.
+  fill(150, 210, 230);
+  stroke(10, 25, 50);
+  strokeWeight(3);
+
+  triangle(290, 325, 355, 260, 375, 325);
+  triangle(385, 325, 365, 260, 465, 325);
+
+  // DETALLE DE LA PUERTA.
+  stroke(5, 15, 35);
+  strokeWeight(3);
+  line(385, 335, 385, 425);
+
+  // MANILLA.
+  line(405, 365, 435, 365);
+
+  // RUEDAS.
+  fill(25);
+  stroke(0);
+  strokeWeight(3);
+  circle(275, 425, 85);
+  circle(530, 425, 85);
+
+  // INTERIOR DE LAS RUEDAS.
+  fill(175, 180, 185);
+  circle(275, 425, 42);
+  circle(530, 425, 42);
+
+  fill(90);
+  circle(275, 425, 17);
+  circle(530, 425, 17);
+
+  // FAROS DELANTEROS.
+  noStroke();
+  fill(255, 240, 150);
+  ellipse(620, 365, 22, 30);
+
+  // LUCES TRASERAS.
+  fill(220, 40, 40);
+  ellipse(180, 365, 18, 30);
+
+
+}
+</script>
+
+</body>
+</html>

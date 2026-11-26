@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 6 - Mi póster</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+function setup() {
+
+  // Tamaño del lienzo.
+  createCanvas(800, 500);
+
+  // Fondo azul marino.
+  background(15, 30, 65);
+  noStroke();
+
+  // TITULO PRINCIPAL.
+  textSize(28);
+  textAlign(CENTER, TOP);
+  fill(255);
+  text("EL BALONMANO ES MI PASION", 320, 35);
+
+  // SUBTITULO.
+  textSize(16);
+  fill(100, 190, 255);
+  text("Mucho más que un deporte, es una forma de vida", 320, 85);
+
+  // FRASES DEL POSTER.
+  textSize(12);
+  fill(255, 220, 100);
+  textAlign(CENTER, TOP);
+  text("COMPAÑERISMO - ESFUERZO - PASIÓN", 320, 145);
+
+  fill(255);
+  text("Nunca te rindas ni pares de luchas por el equipo", 320, 195);
+
+  fill(100, 190, 255);
+  text("Cada objetivo es otra historia nueva", 320, 225);
+
+  fill(255);
+  text("Confiaza plena en tu mismo y tus compañeros", 320, 270);
+
+  // FRASE FINAL.
+  textSize(16);
+  fill(255, 220, 100);
+  text("UN EQUIPO. UN MISMO SUEÑO", 320, 320);
+
+  // ETIQUETAS DE LAS ESQUINAS.
+  textSize(12);
+  fill(255);
+
+  textAlign(LEFT, TOP);
+  text("(0, 0)", 6, 6);
+
+  textAlign(RIGHT, TOP);
+  text("(640, 0)", 634, 6);
+
+  textAlign(LEFT, BOTTOM);
+  text("(0, 360)", 6, 354);
+
+  textAlign(RIGHT, BOTTOM);
+  text("(640, 360)", 634, 354);
+
+  // CENTRO DEL LIENZO.
+  textAlign(CENTER, CENTER);
+  textSize(12);
+  fill(255, 220, 100);
+  text("Centro (320, 180)", 320, 180);
+
+}
+</script>
+
+</body>
+</html>
